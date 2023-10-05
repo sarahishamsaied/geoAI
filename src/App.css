@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #010610;
+  overflow-x: hidden;
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.takeScreenShot {
+  position: absolute;
+  top: 2.5%;
+  right: 1%;
   color: white;
+  z-index: 100;
+}
+.takeScreenShot button {
+  background-color: #e8aaff;
+  color: black;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.takeScreenShot button:hover {
+  background-color: #ffffff98;
+  color: #1a1a1a;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.home {
+  position: relative;
+}
+.imageContainer {
+  position: absolute;
+  top: 4%;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageContainer img {
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.exit {
+  color: white;
+  position: absolute;
+  top: 1%;
+  padding: 0.5rem;
+  margin-top: 0;
+  left: 1%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #1a1a1a;
+  border: 0;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.exit:hover {
+  color: #e8aaff;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background-color: #00000096;
+  z-index: 10;
+}
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.footer button {
+  background-color: #e8aaff;
+  color: black;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }

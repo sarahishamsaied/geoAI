@@ -1,0 +1,26 @@
+{
+  "Category A": {
+    "type": "simple-fill",
+    "color": [255, 0, 0, 0.5],
+    "outline": {
+      "color": [0, 0, 0, 0.1],
+      "width": 1
+    }
+  },
+  "Category B": {
+    "type": "simple-fill",
+    "color": [255, 255, 0, 0.5],
+    "outline": {
+      "color": [0, 0, 0, 0.1],
+      "width": 1
+    }
+  },
+  "Category C": {
+    "type": "simple-fill",
+    "color": [0, 255, 255, 0.5],
+    "outline": {
+      "color": [0, 0, 0, 0.1],
+      "width": 1
+    }
+  }
+}

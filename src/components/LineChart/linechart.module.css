@@ -1,0 +1,78 @@
+.headingCard {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.185);
+}
+.headingCard p {
+  margin: 0 auto;
+  padding: 0.5rem 0.1rem;
+  background-color: rgb(35, 35, 35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+}
+.options {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin-top: 0;
+}
+.options select {
+  padding: 0.2rem;
+  border-radius: 3px;
+  margin-top: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.185);
+  background-color: rgb(28, 28, 28);
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.filter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0;
+  width: 100%;
+}
+.filter label {
+  width: 40%;
+}
+
+.filter select {
+  width: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.lineChart {
+  width: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
