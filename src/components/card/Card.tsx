@@ -14,7 +14,7 @@ type Props = {
 const Card = (props: Props) => {
   return (
     <section
-      className={` w-[500px] h-[320px] bg-indigo-950 bg-opacity-30 border border-slate-800 shadow-xl rounded-xl p-5  left-[${props.left}%] top-[${props.top}%] `}
+      className={` w-[400px] h-[390px] bg-indigo-950 bg-opacity-30 border border-slate-800 shadow-xl rounded-xl p-5  left-[${props.left}%] top-[${props.top}%] `}
     >
       <div className="card-container rounded-md">
         <div className="card-content">

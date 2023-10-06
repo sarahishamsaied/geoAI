@@ -98,3 +98,16 @@ body {
   outline: none;
   border: none;
 }
+
+.resources a {
+  text-decoration: none;
+  color: #e8aaff;
+  font-weight: 600;
+  padding: 4px;
+  border-bottom: 1px solid #e8aaff37;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.resources a:hover {
+  color: #ffffff;
+}

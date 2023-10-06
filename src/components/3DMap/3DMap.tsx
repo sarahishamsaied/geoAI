@@ -11,7 +11,8 @@ const ArcGIS3DComponent = () => {
       "esri/layers/SceneLayer",
       "esri/widgets/Zoom",
       "esri/widgets/Compass",
-    ]).then(([Map, SceneView, SceneLayer, Zoom, Compass]) => {
+      "esri/widgets/Weather",
+    ]).then(([Map, SceneView, SceneLayer, Zoom, Compass, Weather]) => {
       // Create a 3D map
       const map = new Map({
         basemap: "hybrid",
@@ -22,6 +23,10 @@ const ArcGIS3DComponent = () => {
         container: "mapDiv", // Provide the ID of your HTML element
         map: map,
       });
+      const widget = new Weather({ view: view });
+
+      // Adds the weather widget in the top right corner of the view
+      view.ui.add(widget, "top-left");
 
       // Add a 3D building layer
       const buildingLayer = new SceneLayer({

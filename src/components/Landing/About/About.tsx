@@ -50,7 +50,7 @@ const About = (props: Props) => {
         location-based applications
       </p>
       <h1 className="font-bold text-5xl">What we provide.</h1>
-      <div className="flex justify-start items-center gap-5">
+      <div className="flex justify-start flex-wrap items-center gap-5">
         <motion.div
           className="card"
           variants={cardVariants}
