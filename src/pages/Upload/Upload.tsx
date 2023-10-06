@@ -37,7 +37,7 @@ const Upload = () => {
 
       // Handle the Cloudinary response, which contains the image URL
       const imageUrl = response.data.secure_url;
-
+      console.log(imageUrl);
       // Now, you can send this URL to your Flask API
       sendToFlaskApi(imageUrl);
     } catch (error) {
@@ -50,9 +50,11 @@ const Upload = () => {
     axios
       .post("http://localhost:5000/predict", { file_url: imageUrl })
       .then((response) => {
+        console.log("Processing");
         console.log(response.data);
       })
       .catch((error) => {
+        console.log("error");
         console.error(error);
       });
   };
@@ -60,11 +62,7 @@ const Upload = () => {
   return (
     <div>
       <h1>Image Upload</h1>
-      <input
-        type="file"
-        accept=".jpg, .jpeg, .png"
-        onChange={handleFileChange}
-      />
+      <input type="file" accept=".tiff" onChange={handleFileChange} />
       <button onClick={handleUpload} className="bg-blue-500 p-4 rounded-sm">
         Upload
       </button>
