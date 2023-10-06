@@ -10,7 +10,7 @@ const Upload = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
+    console.log(e);
     if (!selectedFile) {
       alert("Please select a TIFF image.");
       return;
@@ -40,7 +40,9 @@ const Upload = () => {
       <h1>TIFF Image Upload</h1>
       <form onSubmit={handleSubmit}>
         <input type="file" accept=".tiff" onChange={handleFileChange} />
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-blue-500 p-4 rounded-sm">
+          Submit
+        </button>
       </form>
     </div>
   );
