@@ -15,7 +15,7 @@ const ArcGIS3DComponent = () => {
     ]).then(([Map, SceneView, SceneLayer, Zoom, Compass, Weather]) => {
       // Create a 3D map
       const map = new Map({
-        basemap: "hybrid",
+        basemap: "topo-vector",
       });
 
       // Create a SceneView for the 3D scene

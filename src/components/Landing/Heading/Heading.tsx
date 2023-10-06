@@ -11,7 +11,12 @@ const Heading = (props: Props) => {
         of Geospatial Data
       </h1>
 
-      <button className=" bg-blue-600 font-bold text-white p-4 px-6 rounded-md border-none outline-none hover:bg-blue-500">
+      <button
+        onClick={() => {
+          window.scrollTo(0, 500);
+        }}
+        className=" bg-blue-600 font-bold text-white py-3 px-6 rounded-md border-none outline-none hover:bg-blue-500"
+      >
         Explore
       </button>
     </section>

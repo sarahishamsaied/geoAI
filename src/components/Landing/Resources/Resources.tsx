@@ -5,8 +5,8 @@ type Props = {};
 
 const Resources = (props: Props) => {
   return (
-    <div className="resources flex flex-col p-12">
-      <h1 className="font-bold text-4xl">Resources</h1>
+    <div className="resources flex flex-col p-12" id="data-archive">
+      <h1 className="font-bold text-4xl mb-3">Data Archive</h1>
       <a href="https://challenge.xviewdataset.org/data-explore">
         xView Dataset
       </a>
@@ -41,9 +41,6 @@ const Resources = (props: Props) => {
       </a>
       <a href="https://www.kaggle.com/datasets/claytonmiller/rasterized-building-footprints-for-usa">
         Rasterized Building Footprints for the USA
-      </a>
-      <a href="https://nasa-impact.github.io/etci2021/">
-        ETCI 2021 Competition on Flood Detection
       </a>
       <a href="https://nasa-impact.github.io/etci2021/">
         ETCI 2021 Competition on Flood Detection

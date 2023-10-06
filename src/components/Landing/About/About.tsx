@@ -36,6 +36,7 @@ const About = (props: Props) => {
 
   return (
     <motion.div
+      id="about"
       ref={ref}
       className={`${style.about} flex flex-col justify-start gap-28 p-11`}
       initial={{ opacity: 0 }}
@@ -43,11 +44,10 @@ const About = (props: Props) => {
     >
       <h1 className="text-5xl font-bold text-white">About the Challenge</h1>
       <p className="text-xl w-[80%]">
-        The GeoAI Challenge is a groundbreaking competition that brings together
-        the brightest minds to explore the intersection of Artificial
-        Intelligence and Geospatial Data. Our mission is to foster innovation
-        and problem-solving using AI in the field of geospatial analysis and
-        location-based applications
+        Our challenge is to leverage existing geospatial foundation models to
+        develop fine-tuned models that can support disaster recovery operations
+        or real-time environmental monitoring, with the aim of improving the
+        effectiveness and efficiencies of these critical operations.
       </p>
       <h1 className="font-bold text-5xl">What we provide.</h1>
       <div className="flex justify-start flex-wrap items-center gap-5">

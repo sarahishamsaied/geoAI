@@ -14,3 +14,33 @@
 .section h1 {
   font-size: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .section {
+    height: 100vh;
+    padding: 2rem;
+    align-items: start;
+  }
+  .section h1 {
+    font-size: 2rem;
+  }
+  .section button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    height: 100vh;
+    padding: 2rem;
+    align-items: start;
+  }
+  .section h1 {
+    font-size: 2rem;
+  }
+  .section button {
+    width: 100%;
+    padding: 1rem;
+  }
+}

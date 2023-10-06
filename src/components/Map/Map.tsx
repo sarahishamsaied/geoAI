@@ -1,6 +1,7 @@
 import { loadModules } from "esri-loader";
 import React, { useEffect, useRef } from "react";
 import symbols from "./symbols.data.json";
+import LineChartComponent from "../LineChart/LineChart";
 
 const indexedSymbols: { [key: string]: { type: string; color: number[] } } =
   symbols;
@@ -64,7 +65,7 @@ const MapComponent = (props: Props) => {
             ],
           });
           const geoJson = new GeoJSONLayer({
-            url: "disasters.geojson",
+            url: "/disasters.geojson",
             popupTemplate: popupTemplate,
             renderer: {
               type: "unique-value",
@@ -186,6 +187,8 @@ const MapComponent = (props: Props) => {
           width: "50vw",
         }}
       ></div>
+      <LineChartComponent />
+      <LineChartComponent />
       <div className="takeScreenShot">
         <button onClick={handleScreenshot}>Take Screenshot</button>
       </div>

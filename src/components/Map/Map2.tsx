@@ -108,6 +108,25 @@ const MapComponent = () => {
           });
           view.ui.add(print, "top-right");
 
+          // Remove print widget on small screen
+          if (window.innerWidth < 1000) {
+            view.ui.remove(print);
+          }
+
+          // Create an Expand instance and set the content
+          // property to the DOM node of the basemap gallery widget
+          // Use an Esri icon font to represent the content inside
+          // of the Expand widget
+          const bgExpand = new Expand({
+            view: view,
+            content: new BasemapGallery({
+              view: view,
+            }),
+          });
+
+          // Add the expand instance to the ui
+          view.ui.add(bgExpand, "top-right");
+
           // Define rendering rule with specific bandIds
           const bandIds = [2, 3, 4, 8, 11, 12]; // B8 (NIR), B4 (Red), B3 (Green)
 
@@ -193,12 +212,12 @@ const MapComponent = () => {
         </button>
       </div>
       <div
-        className={`p-3 absolute w-[500px] h-[170px] bottom-[5%] right-[0] bg-white  z-30 ${
+        className={`p-3 absolute w-[200px] h-[230px]  md:w-[500px] md:h-[170px] bottom-[5%] right-[0] bg-white  z-30 ${
           optionsMenuOpened ? "hidden" : "block"
         }`}
       >
-        <div className="bg-black w-100 p-3 ">
-          <h1 className="text-white ">Explore Imagery</h1>
+        <div className="bg-black w-100 p-1 md:p-3  ">
+          <h1 className="text-white text-sm md:text-lg">Explore Imagery</h1>
         </div>
         <div className="row mt-5">
           <label htmlFor="" className="text-black">
