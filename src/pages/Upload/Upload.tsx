@@ -20,7 +20,7 @@ const Upload = () => {
     // Upload the selected file to Cloudinary
     const formData = new FormData();
     formData.append("file", selectedFile);
-    formData.append("upload_preset", "ukv0dwix"); // Replace with your Cloudinary upload preset
+    formData.append("upload_preset", "zjxiwuoa"); // Replace with your Cloudinary upload preset
 
     try {
       const response = await axios.post(
@@ -32,6 +32,8 @@ const Upload = () => {
           },
         }
       );
+
+      console.log(response.data);
 
       // Handle the Cloudinary response, which contains the image URL
       const imageUrl = response.data.secure_url;
