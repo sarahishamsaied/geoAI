@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# GeoAI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+   - [Installation](#installation)
+3. [Features](#features)
+4. [Demo](#demo)
 
-## Available Scripts
+## Overview
+Welcome to GeoAI, a powerful tool for viewing geospatial imagery. GeoAI is designed to provide state-of-the-art solutions for analyzing satellite imagery, remote sensing, and geographic data. With a range of features and capabilities, it empowers users to gain insights and make informed decisions based on geospatial information.
 
-In the project directory, you can run:
+## Getting Started
+To get started with GeoAI, follow these steps:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
+Follow these installation steps to set up GeoAI:
 
-### `npm test`
+1. Clone the GeoAI repository to your local machine:
+   ```bash
+   git clone https://github.com/sarahishamsaied/geoAI
+   cd geoai
+    npm i
+    npm start  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Features:
+1. #### Visualize Sentinel-2 and Landsat satellites
+      Our feature provides users with the flexibility to visualize Earth's landscapes with custom band IDs, including NIR, R, G, B, SWIR, and SWIR2. This customization enhances the ability to extract valuable insights and perform specific analyses tailored to individual needs.
+2. #### 3D Scene Exploration
+Explore geospatial data in stunning 3D landscapes with our interactive feature. Delve into dynamic cityscapes, natural environments, and architectural structures to uncover new perspectives and insights.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. #### Export
+Exports Maps in multiple image formats.
+<img src = "https://github.com/sarahishamsaied/geoAI/assets/71923204/a04681c2-1fb5-4817-8e9b-30eb8afce7ba" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. #### Bandwidths
+Views the sattellite imagery with the custom bandwidths, with can be: ***NIR, R, G, B, SWIR, and SWIR2.***
+![image](https://github.com/sarahishamsaied/geoAI/assets/71923204/799c7b9d-13b7-4b18-adec-00dad3d50e81)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. #### Annotations
+![image](https://github.com/sarahishamsaied/geoAI/assets/71923204/eded4a2a-ce10-41d1-a989-6539d9fc0d46)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Demo
+<p align="left">
+  <img src="https://main.d3npjzgrmrer43.amplifyapp.com/mobile%20(1).png" width="300px" />
+<img src="https://main.d3npjzgrmrer43.amplifyapp.com/mobile.png" width="300px" />
+<img src="https://main.d3npjzgrmrer43.amplifyapp.com/mobile%20(2).png" width="300px" />
+</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
