@@ -38,7 +38,7 @@ Exports Maps in multiple image formats.
 <img src = "https://github.com/sarahishamsaied/geoAI/assets/71923204/a04681c2-1fb5-4817-8e9b-30eb8afce7ba" />
 
 4. #### Bandwidths
-Views the sattellite imagery with the custom bandwidths, with can be: ***NIR, R, G, B, SWIR, and SWIR2.***
+Views the sattellite imagery with the custom bandwidths, which can be: ***NIR, R, G, B, SWIR, and SWIR2.***
 ![image](https://github.com/sarahishamsaied/geoAI/assets/71923204/799c7b9d-13b7-4b18-adec-00dad3d50e81)
 
 
